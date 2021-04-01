@@ -216,7 +216,7 @@ void loop() {
     // compute force position offset (right-aligned text)
     force_pos_offset = (4 - countDigits(strain1_force));
     if(strain1_force <= 0){
-      force_pos_offset = -1;
+      force_pos_offset -= 1;
     }
 
     // display raw ADC value
