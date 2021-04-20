@@ -1,6 +1,6 @@
 /*
 	lead_matrix.h - Library for the led matrix which
-	inlcudes mapping (x,y) coordinates to the corresponding 
+	inlcudes mapping (x,y) coordinates to the corresponding
 	pixel number of an adafruitNeoPixel led strip as well as
 	checking the inputs of the controller.
 */
@@ -13,7 +13,7 @@
 class LedMatrix{
 
 	public:
-		LedMatrix(int numPixels, int width, int height);		
+		LedMatrix(int numPixels, int width, int height);
 		int coordsToPixelNum(int x, int y);
 		void checkInputs();
 		int checkDirection();
@@ -25,7 +25,7 @@ class LedMatrix{
 		int _width;
 		int _height;
 
-		int _directions[5];
+		int _directions[9];
 		bool _buttons[2];
 
 };

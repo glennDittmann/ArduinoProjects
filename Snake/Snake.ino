@@ -1,6 +1,6 @@
 #include <SD.h>
 #include <Adafruit_NeoPixel.h>
-#include "snake.h"
+#include "Snake.h"
 
 #define PIN 6
 #define NUM_PIXELS 450
